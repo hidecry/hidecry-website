@@ -233,48 +233,6 @@ export default function Portfolio() {
             </div>
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20" id="gallery">
-            <div className="text-center mb-12">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <Heart className="w-8 h-8 text-[var(--yellow)]" />
-                <h2 className="text-3xl font-bold text-[var(--white)]">My Girlfriend</h2>
-              </div>
-              <p className="text-[var(--white-two)]">Is a beautiful girl</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {galleryItems.map((item, index) => (
-                <div
-                  key={index}
-                  onClick={() => setSelectedMedia(item)}
-                  className="group relative cursor-link bg-[var(--neutral-one)]/80 backdrop-blur-sm rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-transform"
-                >
-                  <div className="relative">
-                    {item.type === 'image' ? (
-                      <img
-                        src={item.url}
-                        alt={item.description}
-                        className="w-full object-cover"
-                      />
-                    ) : (
-                      <video
-                        src={item.url}
-                        className="w-full"
-                        preload="metadata"
-                        muted
-                        playsInline
-                      >
-                        Your browser does not support the video tag.
-                      </video>
-                    )}
-                  </div>
-                  <div className="p-4">
-                    <p className="text-[var(--white)] text-center">{item.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {selectedMedia && (
             <div
               className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center p-4 z-50"
