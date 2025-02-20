@@ -18,7 +18,6 @@ import {
   Volume2,
   ArrowDown,
   VolumeX,
-  Heart,
   Star
 } from "lucide-react";
 
