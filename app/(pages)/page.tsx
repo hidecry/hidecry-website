@@ -48,40 +48,7 @@ export default function Portfolio() {
   const [audioInstance, setAudioInstance] = useState<HTMLAudioElement | null>(null);
   const [selectedMedia, setSelectedMedia] = useState<MediaItem | null>(null);
 
-  const music = "https://cdn.discordapp.com/attachments/1303847235943137440/1334747574938108004/Download_2.mp4?ex=679da80c&is=679c568c&hm=97f5d2e8a1e3f700f8114ec04f9ef40f50c1846c7ad5b1b61591ecb00a023464&";
-
-  const galleryItems: MediaItem[] = [
-    {
-      type: 'image',
-      url: '/foto1.jpg',
-      description: 'My girlfriend is very amazing'
-    },
-    {
-      type: 'video',
-      url: '/video1.mp4',
-      description: 'My girlfriend is very amazing ( 2x )'
-    },
-    {
-      type: 'image',
-      url: '/foto2.jpg',
-      description: 'My girlfriend is very cute'
-    },
-    {
-      type: 'image',
-      url: '/foto3.png',
-      description: 'My girlfriend is very stylish'
-    },
-    {
-      type: 'image',
-      url: '/foto4.png',
-      description: 'My girlfriend is very funny'
-    },
-    {
-      type: 'video',
-      url: '/video2.mp4',
-      description: 'My girlfriend is very funny ( 2x )'
-    }
-  ];
+  const music = "https://cdn.discordapp.com/attachments/1336120108380061792/1341954584314122360/voice-message.ogg?ex=67b7e019&is=67b68e99&hm=071155a0ea12efa29912dafd03d413e5ff30e01ba5b8ccbdddbc915b0e43751b&";
 
   useEffect(() => {
     fetch("https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=hidecry")
